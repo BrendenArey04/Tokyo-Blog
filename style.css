@@ -41,15 +41,27 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 120px 20px;
+  padding: 100px 20px;
   color: white;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Tokyo_Tower_and_around_Skyscrapers.jpg"); 
-  background-size: cover;      
-  background-position: center; 
+
+  /* Gradient background (still visible on sides) */
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+  /* Add a centered image overlay */
+  background-image: 
+    url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Tokyo_Tower_and_around_Skyscrapers.jpg"); 
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%; /* ← smaller image so color shows around it */
+
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px; /* Keeps it from stretching too wide */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   position: relative;
 }
 
+/* Optional: Add a soft overlay to make text readable */
 .hero::before {
   content: "";
   position: absolute;
@@ -57,9 +69,11 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.25); /* Slight dark overlay */
+  border-radius: 20px;
 }
 
+/* Keep text above the overlay */
 .hero h2, .hero p {
   position: relative;
   z-index: 1;
@@ -107,6 +121,7 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
 
 
 
