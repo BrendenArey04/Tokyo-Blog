@@ -43,7 +43,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 120px 20px;
   color: white;
-  background-image: url("https://www.pexels.com/photo/people-walking-on-the-streets-surrounded-by-buildings-1510595/"); 
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Tokyo_Tower_and_around_Skyscrapers.jpg"); 
   background-size: cover;      
   background-position: center; 
   background-repeat: no-repeat;
@@ -107,5 +107,6 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
 
 
