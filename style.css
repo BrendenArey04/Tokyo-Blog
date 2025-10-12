@@ -41,12 +41,30 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  color: #333;
+  padding: 120px 20px;
+  color: white;
+  background-image: url("images/tokyo-bg.jpg"); 
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-/* Content Sections */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
 .content-section {
   padding: 50px 20px;
   text-align: center;
@@ -89,3 +107,4 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
