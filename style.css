@@ -4,7 +4,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f8f9fa;
+  background-color: #fff0f3;
   color: #333;
   line-height: 1.6;
 }
@@ -220,4 +220,5 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
