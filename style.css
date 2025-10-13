@@ -164,7 +164,7 @@ nav ul li a:hover::after {
   padding: 60px 20px;
   max-width: 800px;
   margin: 60px auto;
-  background: white;
+  background: #ffe5ea;
   border-radius: 15px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
   text-align: center;
@@ -220,6 +220,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
 
 
