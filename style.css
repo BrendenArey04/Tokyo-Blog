@@ -80,7 +80,7 @@ nav ul li a:hover::after {
   padding: 100px 20px;
   color: white;
   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0d/Tokyo_Tower_and_around_Skyscrapers.jpg");
+  background-image: url("https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/images/main.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
@@ -220,6 +220,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
 
 
