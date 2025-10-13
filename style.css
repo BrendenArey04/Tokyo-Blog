@@ -77,31 +77,24 @@ nav ul li a:hover::after {
 ================================== */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   color: white;
+  position: relative;
+  margin: 60px auto;
+  max-width: 1000px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  /* Gradient background + photo overlay */
   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  background-image: url("https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/images/main.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://www.gotokyo.org/en/destinations/western-tokyo/shibuya/images/main.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;
-  border-radius: 20px;
-  margin: 50px auto;
-  max-width: 1000px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  position: relative;
-  overflow: hidden;
+  background-size: cover; 
   animation: fadeIn 1.5s ease-out;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
 }
 
 .hero h2, .hero p {
@@ -110,13 +103,16 @@ nav ul li a:hover::after {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
 
 /* ================================
    Content Sections
@@ -220,6 +216,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 
 
 
