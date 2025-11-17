@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Explore Tokyo</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="content-section">
+  <h2>📝 Test Your Knowledge About Tokyo!</h2>
+  <p>Answer the questions below to see how well you know Tokyo.</p>
+
+  <form id="quizForm">
+
+    <!-- 1. Fill in the blank -->
+    <div class="quiz-question">
+      <h3>1. Fill in the blank:</h3>
+      <label>Tokyo’s busiest pedestrian intersection is called ________ Crossing.</label><br>
+      <input type="text" name="q1">
+      <p class="feedback" id="f1"></p>
+    </div>
+
+    <!-- 2. Multiple Choice -->
+    <div class="quiz-question">
+      <h3>2. Which district is known for anime and gaming?</h3>
+      <label><input type="radio" name="q2" value="Shibuya"> Shibuya</label><br>
+      <label><input type="radio" name="q2" value="Akihabara"> Akihabara</label><br>
+      <label><input type="radio" name="q2" value="Harajuku"> Harajuku</label>
+      <p class="feedback" id="f2"></p>
+    </div>
+
+    <!-- 3. Multiple Choice -->
+    <div class="quiz-question">
+      <h3>3. Which food is Tokyo known for?</h3>
+      <label><input type="radio" name="q3" value="Pizza"> Pizza</label><br>
+      <label><input type="radio" name="q3" value="Sushi"> Sushi</label><br>
+      <label><input type="radio" name="q3" value="Burgers"> Burgers</label>
+      <p class="feedback" id="f3"></p>
+    </div>
+
+    <!-- 4. Multiple Choice -->
+    <div class="quiz-question">
+      <h3>4. Which landmark offers incredible night views?</h3>
+      <label><input type="radio" name="q4" value="Tokyo Tower"> Tokyo Tower</label><br>
+      <label><input type="radio" name="q4" value="Imperial Palace"> Imperial Palace</label><br>
+      <label><input type="radio" name="q4" value="Yoyogi Park"> Yoyogi Park</label>
+      <p class="feedback" id="f4"></p>
+    </div>
+
+    <!-- 5. Multi-select -->
+    <div class="quiz-question">
+      <h3>5. Select all cultural experiences in Tokyo:</h3>
+      <label><input type="checkbox" name="q5" value="Tea Ceremony"> Tea Ceremony</label><br>
+      <label><input type="checkbox" name="q5" value="Anime Shopping"> Anime Shopping</label><br>
+      <label><input type="checkbox" name="q5" value="Skydiving"> Skydiving</label><br>
+      <label><input type="checkbox" name="q5" value="Cherry Blossoms"> Cherry Blossoms</label>
+      <p class="feedback" id="f5"></p>
+    </div>
+
+    <button type="button" id="submitBtn">Submit Quiz</button>
+    <button type="reset" id="resetBtn">Reset Quiz</button>
+
+  </form>
+
+  <div id="results"></div>
+</section>
+
+<footer>
+  <p>This is a Class Project</p>
+  <a href="https://kennesaw.view.usg.edu/d2l/home/3684194" target="_blank">Class Website</a>
+</footer>
+
+<script src="quiz.js"></script>
+</body>
+</html>
