@@ -49,7 +49,7 @@ function gradeQuiz() {
     setFeedback("f4", "Incorrect — Answer: Tokyo Tower", false);
   }
 
-  // Question 5 (multi-select)
+  // Question 5 
   let q5 = [...document.querySelectorAll("input[name='q5']:checked")].map(b => b.value);
   let correct = arraysEqual(q5, answers.q5);
 
@@ -60,7 +60,7 @@ function gradeQuiz() {
     setFeedback("f5", "Incorrect — Correct: Tea Ceremony, Anime Shopping, Cherry Blossoms", false);
   }
 
-  // Display results
+  // results
   const results = document.getElementById("results");
   let pass = score >= 3 ? "PASS" : "FAIL";
 
